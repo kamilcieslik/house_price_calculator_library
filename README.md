@@ -18,7 +18,7 @@ osiedle itp.
 - Kamil Cieślik <br />
 
 ### Instalacja:
-Instalacja biblioteki pobranej z repozytorium Gitlab w lokalnym venv.
+Instalacja biblioteki pobranej z repozytorium Github w lokalnym venv.
 ```
 ../venv/bin$ pip3.6 install git+git://github.com/kamilcieslik/house_price_calculator_library.git#egg=house-price-calculator
 ```
