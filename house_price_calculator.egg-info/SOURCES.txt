@@ -4,6 +4,8 @@ MANIFEST.in
 README.md
 README.txt
 setup.py
+.eggs/README.txt
+.eggs/setuptools_git-1.2-py2.7.egg
 calculator/__init__.py
 calculator/__init__.pyc
 calculator/prices_calculator.py
@@ -23,6 +25,8 @@ calculator/util/__pycache__/__init__.cpython-36.pyc
 calculator/util/__pycache__/address.cpython-36.pyc
 calculator/util/__pycache__/calculator_result.cpython-36.pyc
 calculator/util/__pycache__/reference_city.cpython-36.pyc
+dist/house-price-calculator-0.2.tar.gz
+dist/house-price-calculator-1.1.tar.gz
 examples/estimating_the_flat_value.py
 examples/typing_and_geocoding_of_addresses.py
 house_price_calculator.egg-info/PKG-INFO
