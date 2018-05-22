@@ -1,4 +1,4 @@
-# House Price Calculator
+# House Price Calculator Library
 
 Pakiet umożliwiający wycenę domów/mieszkań w Polsce na podstawie wprowadzonych
 parametrów, takich jak: metraż, rodzaj zabudowy, rynek, rok budowy, 
