@@ -61,7 +61,7 @@ house_price_calculator_library
 
 ### Przykłady użycia:
 
-## Moduł prices_calculator.py
+#### Moduł prices_calculator.py
 Biblioteka spełnia podstawowe funkcjonalności poprzez uruchomienie głównego
 modułu poprzez przekazanie argumentów. </b>
 Argumenty modułu:
@@ -78,7 +78,7 @@ Argumenty modułu:
 - (2) oraz kolejno - atrybuty atrybuty dodatkowe (balkon, piwnica, ogródek,
 taras, winda, oddzielna kuchnia, strzeżone osiedle).
 
-# 1. Typowanie i geokodowanie adresów
+##### 1. Typowanie i geokodowanie adresów
 ```
 $ python3 -m calculator.prices_calculator y GOOGLE_API_KEY "Zielona 1"
 Wynik typowania adresów Google Maps:
