@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='house-price-calculator',
-    version='0.2',
+    version='1.1',
     packages=find_packages(exclude=['tests*']),
     setup_requires=['setuptools-git'],
     license='MIT',
