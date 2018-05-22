@@ -108,8 +108,6 @@ WYNIKI KALKULACJI:
 		- cena: 227659.37 zł.
 ```
 
-- Kamil Cieślik <br />
-
 ### Wykorzystane technologie i dodatkowe API:
 
 - Python 3.6 <br /> 
