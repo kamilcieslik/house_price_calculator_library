@@ -19,7 +19,7 @@ osiedle itp.
 
 ### Hierarchia zawartości biblioteki:
 ```
-house_price_calculator
+house_price_calculator_library
 |
 |
 |__ calculator
