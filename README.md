@@ -61,7 +61,7 @@ house_price_calculator_library
 
 ### Przykłady użycia:
 
-#### Moduł prices_calculator.py
+#### 1. Moduł prices_calculator.py
 Biblioteka spełnia podstawowe funkcjonalności poprzez uruchomienie głównego
 modułu poprzez przekazanie argumentów. </b>
 Argumenty modułu:
@@ -78,7 +78,7 @@ Argumenty modułu:
 - (2) oraz kolejno - atrybuty atrybuty dodatkowe (balkon, piwnica, ogródek,
 taras, winda, oddzielna kuchnia, strzeżone osiedle).
 
-##### 1. Typowanie i geokodowanie adresów
+##### 1.1. Typowanie i geokodowanie adresów
 ```
 $ python3 -m calculator.prices_calculator y GOOGLE_API_KEY "Zielona 1"
 Wynik typowania adresów Google Maps:
@@ -91,6 +91,21 @@ Zielona 1, Piaseczno, Polska, lat: 52.077273, lng: 21.048627
 Zielona 1, 11-015 Olsztynek, Polska, lat: 53.5810419, lng: 20.296602
 Zielona 1, 20-082 Lublin, Polska, lat: 51.24814259999999, lng: 22.5642616
 Zielona 1, Słupsk, Polska, lat: 54.455675, lng: 17.023571
+```
+
+##### 1.2. Szacowanie wartości mieszkania
+```
+$ python3 -m calculator.prices_calculator no GOOGLE_API_KEY 49.95153 18.609122 
+blok pierwotny pustak 2010 32 f f f f f f f
+WYNIKI KALKULACJI:
+	*miasto odniesiania*
+		- nazwa: Katowice,
+		- cena za mkw: 4664.0 zł,
+		- odległość: 46.96 km.
+	*cena mieszkania*
+		- podstawowa cena za mkw: 4336.8 zł,
+		- ostateczna cena za mkw: 4614.36 zł,
+		- cena: 147659.37 zł.
 ```
 
 - Kamil Cieślik <br />
