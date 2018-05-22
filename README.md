@@ -119,7 +119,7 @@ $ python3
 >>> address = calculator.util.Address("", 49.95153, 18.609122)
 >>> 
 >>> from calculator.prices_calculator import PricesCalculator
->>> calculator = PricesCalculator("AIzaSyBEmx5P3vl4ox4OU6nPgwTbU9k-_0Zm6Lo")
+>>> calculator = PricesCalculator(GOOGLE_API_KEY)
 >>> calculator.selected_address = address
 >>> calculator_result = calculator.calculate_house_price("blok", "pierwotny", "cegła", 1990, 25, False, False, False, True, True, False, False)
 >>> calculator_result.
@@ -129,7 +129,6 @@ calculator_result.distance_from_flat_to_nearest_reference_city  calculator_resul
 169746.4
 >>> calculator_result.nearest_reference_city.name
 'Katowice'
-
 ```
 
 ### Wykorzystane technologie i dodatkowe API:
