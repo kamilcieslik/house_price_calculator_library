@@ -17,6 +17,12 @@ osiedle itp.
 
 - Kamil Cieślik <br />
 
+### Instalacja:
+Instalacja biblioteki pobranej z repozytorium Gitlab w lokalnym venv.
+```
+../venv/bin$ pip3.6 install git+git://github.com/kamilcieslik/house_price_calculator_library.git#egg=house-price-calculator
+```
+
 ### Hierarchia zawartości biblioteki:
 ```
 house_price_calculator_library
@@ -41,11 +47,20 @@ house_price_calculator_library
 |     |     |__ calculator_result.py
 |     |     |
 |     |     |__ reference_city.py
-|     |     
+|     |
 |     |__ __init__.py
+|     |
 |     |__ prices_calculator.py
 |
+|__ examples
+|     |
+|     |__ estimating_the_flat_value.py
+|     |
+|     |__ typing_and_geocoding_of_addresses.py
+|
+|
 |__ tests
+|     |
 |     |__ calculations_test.py
 |
 |__ .gitignore
@@ -55,6 +70,8 @@ house_price_calculator_library
 |__ MANIFEST.in
 |
 |__ README.md
+|
+|__ README.txt
 |
 |__ setup.py
 ```
@@ -95,8 +112,7 @@ Zielona 1, Słupsk, Polska, lat: 54.455675, lng: 17.023571
 
 ##### 1.2. Szacowanie wartości mieszkania
 ```
-$ python3 -m calculator.prices_calculator no GOOGLE_API_KEY 49.95153 18.609122
-blok pierwotny pustak 2010 32 f f t f t f f
+$ python3 -m calculator.prices_calculator no GOOGLE_API_KEY 49.95153 18.609122 blok pierwotny pustak 2010 32 f f t f t f f
 WYNIKI KALKULACJI:
 	*miasto odniesiania*
 		- nazwa: Katowice,
@@ -111,7 +127,7 @@ WYNIKI KALKULACJI:
 #### 2. Standardowe wykorzystywanie pakietów
 Biblioteka posiada główną klasę PricesCalculator, która przyjmuje GOOGLE_API_KEY
 poprzez konstruktor. Ponadto istnieją klasy pomocnicze, m.in do przechowywania
-adresów, miast odniesienia, wyników oszacowania wartości mieszkania. 
+adresów, miast odniesienia, wyników oszacowania wartości mieszkania.
 
 ##### 1.1. Typowanie i geokodowanie adresów
 ```
@@ -120,13 +136,13 @@ $ python3
 >>> calculator = PricesCalculator(GOOGLE_API_KEY)
 >>> calculator.autocomplete_addresses = "Kolorowa 12"
 >>> print(calculator.autocomplete_addresses)
-[Kolorowa 12, Częstochowa, Polska, Kolorowa 12, 02-495 Warszawa, Polska, 
-Kolorowa 12, Otwock, Polska, Kolorowa 12, 95-100 Zgierz, Polska, 
-Kolorowa 12, 20-400 Lublin, Polska, 
-Kolorowa 12, Tarnowskie Góry, Polska, 
-Kolorowa 12, 43-370 Szczyrk, Polska, 
-Kolorowa 12, 84-105 Władysławowo, Polska, 
-Kolorowa 12, 42-400 Zawiercie, Polska, 
+[Kolorowa 12, Częstochowa, Polska, Kolorowa 12, 02-495 Warszawa, Polska,
+Kolorowa 12, Otwock, Polska, Kolorowa 12, 95-100 Zgierz, Polska,
+Kolorowa 12, 20-400 Lublin, Polska,
+Kolorowa 12, Tarnowskie Góry, Polska,
+Kolorowa 12, 43-370 Szczyrk, Polska,
+Kolorowa 12, 84-105 Władysławowo, Polska,
+Kolorowa 12, 42-400 Zawiercie, Polska,
 Kolorowa 12, 80-001 Gdańsk, Polska]
 ```
 
@@ -135,15 +151,13 @@ Kolorowa 12, 80-001 Gdańsk, Polska]
 $ python3
 >>> import calculator.util
 >>> address = calculator.util.Address("", 49.95153, 18.609122)
->>> 
+>>>
 >>> from calculator.prices_calculator import PricesCalculator
 >>> calculator = PricesCalculator(GOOGLE_API_KEY)
 >>> calculator.selected_address = address
->>> calculator_result = calculator.calculate_house_price("blok", "pierwotny",
-"cegła", 1990, 25, False, False, False, True, True, False, False)
+>>> calculator_result = calculator.calculate_house_price("blok", "pierwotny", "cegła", 1990, 25, False, False, False, True, True, False, False)
 >>> calculator_result.
-calculator_result.basic_price_per_meter                         calculator_result.final_price_per_meter
-calculator_result.nearest_reference_city
+calculator_result.basic_price_per_meter                         calculator_result.final_price_per_meter                         calculator_result.nearest_reference_city
 calculator_result.distance_from_flat_to_nearest_reference_city  calculator_result.house_price   
 >>>                               
 >>> calculator_result.house_price
