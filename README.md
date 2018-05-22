@@ -91,7 +91,6 @@ Zielona 1, Piaseczno, Polska, lat: 52.077273, lng: 21.048627
 Zielona 1, 11-015 Olsztynek, Polska, lat: 53.5810419, lng: 20.296602
 Zielona 1, 20-082 Lublin, Polska, lat: 51.24814259999999, lng: 22.5642616
 Zielona 1, Słupsk, Polska, lat: 54.455675, lng: 17.023571
-
 ```
 
 - Kamil Cieślik <br />
