@@ -48,6 +48,8 @@ house_price_calculator
 |__ tests
 |     |__ calculations_test.py
 |
+|__ .gitignore
+|
 |__ LICENSE
 |
 |__ MANIFEST.in
@@ -74,4 +76,4 @@ TODO:
 
 ### Wykorzystane narzędzia:
 
-- PyCharm Professional IDEA 2018.1.1 <br />
+- PyCharm Professional IDEA 2018.1.3 <br />
