@@ -112,6 +112,23 @@ Biblioteka posiada główną klasę PricesCalculator, która przyjmuje GOOGLE_AP
 poprzez konstruktor. Ponadto istnieją klasy pomocnicze, m.in do przechowywania
 adresów, miast odniesienia, wyników oszacowania wartości mieszkania. 
 
+##### 1.1. Typowanie i geokodowanie adresów
+```
+$ python3
+>>> from calculator.prices_calculator import PricesCalculator
+>>> calculator = PricesCalculator("AIzaSyBEmx5P3vl4ox4OU6nPgwTbU9k-_0Zm6Lo")
+>>> calculator.autocomplete_addresses = "Kolorowa 12"
+>>> print(calculator.autocomplete_addresses)
+[Kolorowa 12, Częstochowa, Polska, Kolorowa 12, 02-495 Warszawa, Polska, 
+Kolorowa 12, Otwock, Polska, Kolorowa 12, 95-100 Zgierz, Polska, 
+Kolorowa 12, 20-400 Lublin, Polska, 
+Kolorowa 12, Tarnowskie Góry, Polska, 
+Kolorowa 12, 43-370 Szczyrk, Polska, 
+Kolorowa 12, 84-105 Władysławowo, Polska, 
+Kolorowa 12, 42-400 Zawiercie, Polska, 
+Kolorowa 12, 80-001 Gdańsk, Polska]
+```
+
 ##### 2.2. Szacowanie wartości mieszkania
 ```
 $ python3
@@ -124,7 +141,8 @@ $ python3
 >>> calculator_result = calculator.calculate_house_price("blok", "pierwotny", "cegła", 1990, 25, False, False, False, True, True, False, False)
 >>> calculator_result.
 calculator_result.basic_price_per_meter                         calculator_result.final_price_per_meter                         calculator_result.nearest_reference_city
-calculator_result.distance_from_flat_to_nearest_reference_city  calculator_result.house_price                                   
+calculator_result.distance_from_flat_to_nearest_reference_city  calculator_result.house_price   
+>>>                               
 >>> calculator_result.house_price
 169746.4
 >>> calculator_result.nearest_reference_city.name
