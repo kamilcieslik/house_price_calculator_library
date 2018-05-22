@@ -10,6 +10,6 @@ setup(
     long_description=open('README.md').read(),
     install_requires=['googlemaps'],
     url='https://github.com/kamilcieslik/house_price_calculator',
-    author='Kamil Cieślik',
+    author='Kamil Cieslik',
     author_email='mrfarinq@hotmail.com'
 )
