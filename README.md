@@ -96,7 +96,7 @@ Zielona 1, Słupsk, Polska, lat: 54.455675, lng: 17.023571
 ##### 1.2. Szacowanie wartości mieszkania
 ```
 $ python3 -m calculator.prices_calculator no GOOGLE_API_KEY 49.95153 18.609122 
-blok pierwotny pustak 2010 32 f f f f f f f
+blok pierwotny pustak 2010 32 f f t f t f f
 WYNIKI KALKULACJI:
 	*miasto odniesiania*
 		- nazwa: Katowice,
@@ -104,8 +104,8 @@ WYNIKI KALKULACJI:
 		- odległość: 46.96 km.
 	*cena mieszkania*
 		- podstawowa cena za mkw: 4336.8 zł,
-		- ostateczna cena za mkw: 4614.36 zł,
-		- cena: 147659.37 zł.
+		- ostateczna cena za mkw: 7114.36 zł,
+		- cena: 227659.37 zł.
 ```
 
 - Kamil Cieślik <br />
