@@ -1,3 +1,4 @@
+import sys
 import math
 from datetime import datetime
 
@@ -336,9 +337,6 @@ class PricesCalculator(object):
 
 
 if __name__ == "__main__":
-    import sys
-
-
     def str_to_bool(v):
         if v.lower() in ("yes", "true", "t", "y", "1"):
             return "true"

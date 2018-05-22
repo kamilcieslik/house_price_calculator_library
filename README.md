@@ -108,6 +108,32 @@ WYNIKI KALKULACJI:
 		- cena: 227659.37 zł.
 ```
 
+#### 2. Standardowe wykorzystywanie pakietów
+Biblioteka posiada główną klasę PricesCalculator, która przyjmuje GOOGLE_API_KEY
+poprzez konstruktor. Ponadto istnieją klasy pomocnicze, m.in do przechowywania
+adresów, miast odniesienia, wyników oszacowania wartości mieszkania. 
+
+##### 2.2. Szacowanie wartości mieszkania
+```
+$ python3
+>>> import calculator.util
+>>> address = calculator.util.Address("", 49.95153, 18.609122)
+>>> 
+>>> from calculator.prices_calculator import PricesCalculator
+>>> calculator = PricesCalculator("AIzaSyBEmx5P3vl4ox4OU6nPgwTbU9k-_0Zm6Lo")
+>>> calculator.selected_address = address
+>>> calculator_result = calculator.calculate_house_price("blok", "pierwotny", 
+"cegła", 1990, 25, False, False, False, True, True, False, False)
+>>> calculator_result.
+calculator_result.basic_price_per_meter                         calculator_result.final_price_per_meter                         calculator_result.nearest_reference_city
+calculator_result.distance_from_flat_to_nearest_reference_city  calculator_result.house_price                                   
+>>> calculator_result.house_price
+169746.4
+>>> calculator_result.nearest_reference_city.name
+'Katowice'
+
+```
+
 ### Wykorzystane technologie i dodatkowe API:
 
 - Python 3.6 <br /> 
