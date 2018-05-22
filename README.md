@@ -60,8 +60,38 @@ house_price_calculator_library
 ```
 
 ### Przykłady użycia:
+
+## Moduł prices_calculator.py
+Biblioteka spełnia podstawowe funkcjonalności poprzez uruchomienie głównego
+modułu poprzez przekazanie argumentów. </b>
+Argumenty modułu:
+- tryb działania (typowanie adresów, szacowanie wartości mieszkania),
+- Google Api Key,
+- (1) adres,
+- (2) latitude,
+- (2) longitude,
+- (2) rodzaj zabudowy (blok, kamienica, dom wolnostojący, apartamentowiec),
+- (2) rodzaj rynku (wtórny, pierwotny),
+- (2) materiał budynku (wielka płyta, pustak, cegła, drewno, żelbeton),
+- (2) rok budowy,
+- (2) ilość mkw,
+- (2) oraz kolejno - atrybuty atrybuty dodatkowe (balkon, piwnica, ogródek,
+taras, winda, oddzielna kuchnia, strzeżone osiedle).
+
+# 1. Typowanie i geokodowanie adresów
 ```
-TODO:
+$ python3 -m calculator.prices_calculator y GOOGLE_API_KEY "Zielona 1"
+Wynik typowania adresów Google Maps:
+Zielona 1, Jastrzębie-Zdrój, Polska, lat: 49.95153, lng: 18.609122
+Zielona 1, Gdynia, Polska, lat: 54.549537, lng: 18.530066
+Zielona 1, Łódź, Polska, lat: 51.7706658, lng: 19.4555191
+Zielona 1, 57-340 Duszniki-Zdrój, Polska, lat: 50.3948124, lng: 16.384597
+Zielona 1, 02-913 Warszawa, Polska, lat: 52.1856109, lng: 21.0691659
+Zielona 1, Piaseczno, Polska, lat: 52.077273, lng: 21.048627
+Zielona 1, 11-015 Olsztynek, Polska, lat: 53.5810419, lng: 20.296602
+Zielona 1, 20-082 Lublin, Polska, lat: 51.24814259999999, lng: 22.5642616
+Zielona 1, Słupsk, Polska, lat: 54.455675, lng: 17.023571
+
 ```
 
 - Kamil Cieślik <br />
