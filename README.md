@@ -95,8 +95,7 @@ Zielona 1, Słupsk, Polska, lat: 54.455675, lng: 17.023571
 
 ##### 1.2. Szacowanie wartości mieszkania
 ```
-$ python3 -m calculator.prices_calculator no GOOGLE_API_KEY 49.95153 18.609122 
-blok pierwotny pustak 2010 32 f f t f t f f
+$ python3 -m calculator.prices_calculator no GOOGLE_API_KEY 49.95153 18.609122 blok pierwotny pustak 2010 32 f f t f t f f
 WYNIKI KALKULACJI:
 	*miasto odniesiania*
 		- nazwa: Katowice,
@@ -122,8 +121,7 @@ $ python3
 >>> from calculator.prices_calculator import PricesCalculator
 >>> calculator = PricesCalculator("AIzaSyBEmx5P3vl4ox4OU6nPgwTbU9k-_0Zm6Lo")
 >>> calculator.selected_address = address
->>> calculator_result = calculator.calculate_house_price("blok", "pierwotny", 
-"cegła", 1990, 25, False, False, False, True, True, False, False)
+>>> calculator_result = calculator.calculate_house_price("blok", "pierwotny", "cegła", 1990, 25, False, False, False, True, True, False, False)
 >>> calculator_result.
 calculator_result.basic_price_per_meter                         calculator_result.final_price_per_meter                         calculator_result.nearest_reference_city
 calculator_result.distance_from_flat_to_nearest_reference_city  calculator_result.house_price                                   
