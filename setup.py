@@ -4,6 +4,7 @@ setup(
     name='house-price-calculator',
     version='0.2',
     packages=find_packages(exclude=['tests*']),
+    setup_requires=['setuptools-git'],
     license='MIT',
     description='Library designed for calculating house prices.',
     long_description=open('README.md').read(),
